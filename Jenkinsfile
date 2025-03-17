@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running unit tests...'
-                bat 'dotnet test YourTestProject/YourTestProject.csproj'
+                bat 'dotnet test WeatherForecast.API.Test/WeatherForecast.API.Test.csproj'
                 
                 // To publish test results:
                 // junit '**/test-results/*.xml'
