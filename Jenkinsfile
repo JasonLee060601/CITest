@@ -4,14 +4,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                bat 'dotnet restore'
-                bat 'dotnet build'
+                sh 'dotnet restore'
+                sh 'dotnet build'
             }
         }
         stage('Test') {
             steps {
                 echo 'Running unit tests...'
-                bat 'dotnet test WeatherForecast.API.Test/WeatherForecast.API.Test.csproj'
+                sh 'dotnet test WeatherForecast.API.Test/WeatherForecast.API.Test.csproj'
                 
                 // To publish test results:
                 mstest testResultsFile:"**/*.trx", keepLongStdio: true
