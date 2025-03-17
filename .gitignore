@@ -1,0 +1,24 @@
+################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/CodeAnalyzer/FileContentIndex/d03bee51-2e0c-4812-a6ea-1ea08f0082c1.vsidx
+/.vs/CodeAnalyzer/FileContentIndex
+/.vs/roslyn-analyzer/FileContentIndex/91496066-9ec3-4d04-b85d-64d2cd143ad4.vsidx
+/.vs/roslyn-analyzer/v17/.wsuo
+/WebApplication1/obj/Debug/net6.0/TestWebApi.AssemblyInfo.cs
+/WebApplication1/obj/Debug/net6.0/TestWebApi.AssemblyInfoInputs.cache
+/FakeFacade/obj/Debug/net6.0/FakeFacade.AssemblyInfoInputs.cache
+/FakeFacade/obj/Debug/net6.0/FakeFacade.AssemblyInfo.cs
+/FakeBC/obj/Debug/net6.0/FakeBC.AssemblyInfoInputs.cache
+/FakeBC/obj/Debug/net6.0/FakeBC.AssemblyInfo.cs
+/ConsoleApp1/obj/Debug/net6.0/ConsoleApp1.AssemblyInfoInputs.cache
+/ConsoleApp1/obj/Debug/net6.0/ConsoleApp1.AssemblyInfo.cs
+/.vs/slnx.sqlite
+/.vs/CodeAnalyzer/v17/.suo
+/.vs/CodeAnalyzer/DesignTimeBuild/.dtbcache.v2
+/.vs/ProjectEvaluation/codeanalyzer.metadata.v8.bin
+/.vs/ProjectEvaluation/codeanalyzer.projects.v8.bin
+/.vs/roslyn-analyzer/v17/workspaceFileList.bin
+/ConsoleApp1/obj/Debug/net6.0/RoslynAnalyzer.AssemblyInfo.cs
+/ConsoleApp1/obj/Debug/net6.0/RoslynAnalyzer.AssemblyInfoInputs.cache
