@@ -14,7 +14,7 @@ pipeline {
                 bat 'dotnet test WeatherForecast.API.Test/WeatherForecast.API.Test.csproj'
                 
                 // To publish test results:
-                // junit '**/test-results/*.xml'
+                mstest testResultsFile:"**/*.trx", keepLongStdio: true
             }
         }
     }
