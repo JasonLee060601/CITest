@@ -15,6 +15,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Build the .NET project
+                echo 'now building'
                 bat "\"${MSBUILD_PATH}\" /t:Restore,Build /p:Configuration=Release"
             }
         }
@@ -22,6 +23,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Run tests (replace with your test command)
+                echo 'now conduct testing'
                 bat 'dotnet test WeatherForecast.API.Test/WeatherForecast.API.Test.csproj'
             }
         }
@@ -29,6 +31,7 @@ pipeline {
         stage('Publish') {
             steps {
                 // Publish the .NET application
+                echo 'now publishing'
                 bat "\"${MSBUILD_PATH}\" /t:Publish /p:Configuration=Release"
             }
         }
