@@ -1,13 +1,10 @@
 pipeline {
-    agent {
-        docker {
-            image 'mcr.microsoft.com/dotnet/sdk:6.0'
-        }
-    }
+    agent any
     stages {
         stage('Build') {
             steps {
                 echo 'now doing buildingTag'
+                dotnetBuild
             }
         }
         stage('Test') {
