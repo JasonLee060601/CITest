@@ -9,17 +9,18 @@ pipeline {
     }
     
     stages {
+         stage('Check dotnet') {
+            steps {
+                sh 'echo $PATH'
+                sh 'ls -l $DOTNET_ROOT'
+                sh '$DOTNET_ROOT/dotnet.exe --version'
+            }
+        }
         stage('Checkout') {
             steps {
                 echo 'Checking out repository...'
                 git branch: 'main', url: 'https://github.com/JasonLee060601/CITest.git'
                 sh 'ls -la'
-            }
-        }
-        stage('Check dotnet') {
-            steps {
-                sh 'echo $PATH'
-                sh 'dotnet --version'
             }
         }
         stage('Build Application') {
