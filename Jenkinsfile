@@ -1,6 +1,7 @@
 pipeline {
-    agent any
-
+    agent {
+        docker { image 'docker' }
+    }
     environment{
         registry = "CITest/main"
         img = "$registry" + ":${env.BUILD_ID}"
