@@ -2,9 +2,6 @@ pipeline {
     agent any
     stages {
         stage('Build') {
-             when{
-                buildingTag()
-            }
             steps {
                 echo 'now doing buildingTag'
                 sh 'dotnet restore'
