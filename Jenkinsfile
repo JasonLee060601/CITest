@@ -8,8 +8,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'now doing buildingTag'
-                dotnetRestore
-                dotnetBuild
             }
         }
         stage('Test') {
