@@ -1,8 +1,1 @@
-sdfsdftest
-test2
-oko
-asdfgasdg
-asdg
-asg
-asg
-asdasd
+testing for whole application
