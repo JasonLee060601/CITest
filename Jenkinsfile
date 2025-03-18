@@ -10,8 +10,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'now checking out'
-                git branch 'main', url https://github.com/JasonLee060601/CITest.git
-                    sh 'ls -la'
+                git branch: 'main', url: 'https://github.com/JasonLee060601/CITest.git'
+                sh 'ls -la'
             }
         }
         stage('Stop running Container') {
