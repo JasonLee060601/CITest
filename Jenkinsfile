@@ -4,6 +4,7 @@ pipeline {
     environment{
         registry = "CITest/main"
         img = "$registry" + ":${env.BUILD_ID}"
+        DOCKERFILE_DIR = "path/to/dockerfile/directory"
     }
     
     stages {
@@ -25,7 +26,7 @@ pipeline {
             steps {
                 echo 'now building'
                 script{
-                    dockerImg = docker.build("${img}")
+                    dockerImg = docker.build("${img}", "${DOCKERFILE_DIR}")
                 }
             }
         }
