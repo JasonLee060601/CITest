@@ -4,7 +4,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'now doing buildingTag'
-                dotnetBuild
+                sh 'dotnet restore'
+                sh 'dotnet build'
             }
         }
         stage('Test') {
