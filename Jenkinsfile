@@ -1,17 +1,38 @@
 pipeline {
     agent any
+
+    environment{
+        registry = "CITest/main"
+        img = "$registry" + ":${env.BUILD_ID}"
+    }
+    
     stages {
         stage('Checkout') {
             steps {
                 echo 'now checking out'
-                checkout scm
+                git branch 'main', url https://github.com/JasonLee060601/CITest.git
+                    sh 'ls -la'
+            }
+        }
+        stage('Stop running Container') {
+            steps {
+                sh returnStatus: true, script: 'docker stop $(docker ps -a | grep ${J0B_NAME} | awk \'{print $1}\')'
+                sh returnStatus: true, script: 'docker rmi $(docker images | grep ${registry} | awk \'{print $3}\') -- force'
+                sh returnStatus: true, script: 'docker rm ${JOB_NAME}'
             }
         }
         stage('Build') {
             steps {
                 echo 'now building'
-                sh 'dotnet restore'
-                sh 'dotnet build --configuration Release'
+                script{
+                    dockerImg = docker.build("${img}")
+                }
+            }
+        }
+        stage('Run') {
+            steps {
+                echo 'Run Image'
+                sh returnStdout: true, script: "docker run -- rm -d -- name ${JOB_NAME} -p 8081:5000 ${img}"
             }
         }
         stage('Test') {
