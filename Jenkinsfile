@@ -1,20 +1,35 @@
 pipeline {
     agent any
+    environment {
+        // Define environment variables if needed
+        MSBUILD_PATH = 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\MSBuild\\Current\\Bin\\MSBuild.exe'
+    }
     stages {
-        stage('Build') {
+        stage('Checkout') {
             steps {
-                echo 'now doing buildingTag'
-                dotnetRestore
-                dotnetBuild
+                // Check out the source code from version control
+                echo 'now checking out'
+                checkout scm
             }
         }
+        stage('Build') {
+            steps {
+                // Build the .NET project
+                bat "\"${MSBUILD_PATH}\" /t:Restore,Build /p:Configuration=Release"
+            }
+        }
+
         stage('Test') {
             steps {
-                echo 'Running unit tests...'
-                sh 'dotnet test WeatherForecast.API.Test/WeatherForecast.API.Test.csproj'
-                
-                // To publish test results:
-                mstest testResultsFile:"**/*.trx", keepLongStdio: true
+                // Run tests (replace with your test command)
+                bat 'dotnet test WeatherForecast.API.Test/WeatherForecast.API.Test.csproj'
+            }
+        }
+
+        stage('Publish') {
+            steps {
+                // Publish the .NET application
+                bat "\"${MSBUILD_PATH}\" /t:Publish /p:Configuration=Release"
             }
         }
     }
