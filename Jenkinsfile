@@ -17,7 +17,7 @@ pipeline {
         stage('Build Application') {
             steps {
                 echo 'Building application...'
-                sh 'dotnet build --configuration Release'
+                sh 'dotnetBuild --configuration Release'
             }
         }
         stage('Create Docker Image') {
