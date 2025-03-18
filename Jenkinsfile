@@ -1,6 +1,14 @@
 pipeline {
     agent any
     stages {
+        stage('Building Tag'){
+            when{
+                buildingTag()
+            }
+            steps{
+                echo 'now doing buildingTag'
+            }
+        }
         stage('Build') {
             steps {
                 echo 'Building...'
