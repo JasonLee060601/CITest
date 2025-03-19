@@ -62,5 +62,21 @@ namespace WeatherForecast.API.Test
             Assert.NotNull(result);
             Assert.True(result.All(f => validSummaries.Contains(f.Summary)));
         }
+
+        [Fact]
+        public void TestForNothing()
+        {
+            var validSummaries = new[]
+            {
+                "aaaaaaaaaaa", "bbbbbbbbbbb", "vcasdvgassdvc", "dasdfasdfga",
+            };
+
+            // Act
+            var result = _controller.Get();
+
+            // Assert
+            Assert.NotNull(result);
+            Assert.True(result.All(f => validSummaries.Contains(f.Summary)));
+        }
     }
 }
