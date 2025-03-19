@@ -1,50 +1,41 @@
 pipeline {
     agent any
-
-    environment{
-        registry = "CITest/main"
-        img = "$registry" + ":${env.BUILD_ID}"
+    environment {
+        registry = "myapp"  // Change this to your preferred image name
+        img = "$registry:${env.BUILD_ID}"
+        DOCKERFILE_DIR = "CITest/Dockerfile" // Change this to your Dockerfile path
     }
     
     stages {
         stage('Checkout') {
             steps {
-                echo 'now checking out'
+                echo 'Checking out repository...'
                 git branch: 'main', url: 'https://github.com/JasonLee060601/CITest.git'
                 sh 'ls -la'
             }
         }
-        stage('Stop running Container') {
+        stage('Build Application') {
             steps {
-                sh returnStatus: true, script: 'docker stop $(docker ps -a | grep ${J0B_NAME} | awk \'{print $1}\')'
-                sh returnStatus: true, script: 'docker rmi $(docker images | grep ${registry} | awk \'{print $3}\') -- force'
-                sh returnStatus: true, script: 'docker rm ${JOB_NAME}'
+                echo 'Building application...'
+                sh 'dotnet build --configuration Release'
             }
         }
-        stage('Build') {
+        stage('Create Docker Image') {
             steps {
-                echo 'now building'
-                script{
-                    dockerImg = docker.build("${img}")
-                }
+                echo 'Building Docker image...'
+                sh "docker build -t ${img} ${DOCKERFILE_DIR}"
             }
         }
-        stage('Run') {
+        stage('Run Docker Container') {
             steps {
-                echo 'Run Image'
-                sh returnStdout: true, script: "docker run -- rm -d -- name ${JOB_NAME} -p 8081:5000 ${img}"
+                echo 'Running container...'
+                sh "docker run --rm -d --name ${JOB_NAME} -p 8081:5000 ${img}"
             }
         }
-        stage('Test') {
+        stage('Verify Docker Image') {
             steps {
-                echo 'now conduct testing'
-                sh 'dotnet test WeatherForecast.API.Test/WeatherForecast.API.Test.csproj'
-            }
-        }
-        stage('Publish') {
-            steps {
-                echo 'now publishing'
-                sh 'dotnet publish --configuration Release'
+                echo 'Listing available Docker images...'
+                sh "docker images | grep ${registry}"
             }
         }
     }
