@@ -1,10 +1,10 @@
-FROM harbor.sige.la/microsoft/dotnet/aspnet:6.0
+# Use the official .NET runtime image
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
 
-RUN apt-get update
-RUN apt-get install -y curl
+WORKDIR /app
+COPY bin/Release/net6.0/ ./
 
-WORKDIR /wwwroot
-
-COPY ./wwwroot /wwwroot
+# Expose API ports
+EXPOSE 7287 5175
 
 ENTRYPOINT ["dotnet", "CIUnitTesting.dll"]
