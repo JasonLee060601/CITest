@@ -4,18 +4,9 @@ pipeline {
         registry = "myapp"  // Change this to your preferred image name
         img = "$registry:${env.BUILD_ID}"
         DOCKERFILE_DIR = "CITest/Dockerfile" // Change this to your Dockerfile path
-        DOTNET_ROOT = "/var/jenkins_home/tools/io.jenkins.plugins.dotnet.DotNetSDK/.NET_6"
-        PATH = "${DOTNET_ROOT}:${PATH}"
     }
     
     stages {
-         stage('Check dotnet') {
-            steps {
-                sh 'echo $PATH'
-                sh 'ls -l $DOTNET_ROOT'
-                sh '$DOTNET_ROOT/dotnet.exe --version'
-            }
-        }
         stage('Checkout') {
             steps {
                 echo 'Checking out repository...'
@@ -26,7 +17,7 @@ pipeline {
         stage('Build Application') {
             steps {
                 echo 'Building application...'
-                sh '$DOTNET_ROOT/dotnet build --configuration Release'
+                sh 'dotnet build --configuration Release'
             }
         }
         stage('Create Docker Image') {
