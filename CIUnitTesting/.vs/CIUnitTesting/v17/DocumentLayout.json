@@ -3,22 +3,25 @@
   "WorkspaceRootPath": "D:\\CITest\\CIUnitTesting\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C222574D-094B-488C-98CD-92C9FD9FC940}|CIUnitTesting.csproj|d:\\citest\\ciunittesting\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C222574D-094B-488C-98CD-92C9FD9FC940}|CIUnitTesting.csproj|solutionrelative:weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C222574D-094B-488C-98CD-92C9FD9FC940}|CIUnitTesting.csproj|d:\\citest\\ciunittesting\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C222574D-094B-488C-98CD-92C9FD9FC940}|CIUnitTesting.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C222574D-094B-488C-98CD-92C9FD9FC940}|CIUnitTesting.csproj|d:\\citest\\ciunittesting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C222574D-094B-488C-98CD-92C9FD9FC940}|CIUnitTesting.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5516A970-3EA2-48B8-A1F1-13944A16C79A}|..\\WeatherForecast.API.Test\\WeatherForecast.API.Test.csproj|d:\\citest\\weatherforecast.api.test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C222574D-094B-488C-98CD-92C9FD9FC940}|CIUnitTesting.csproj|d:\\citest\\ciunittesting\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C222574D-094B-488C-98CD-92C9FD9FC940}|CIUnitTesting.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{974F8C92-9529-464C-879C-F514AC9632EB}|..\\WeatherForecast.Communication\\WeatherForecast.Communication.csproj|d:\\citest\\weatherforecast.communication\\weatherforecastclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C222574D-094B-488C-98CD-92C9FD9FC940}|CIUnitTesting.csproj|d:\\citest\\ciunittesting\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C222574D-094B-488C-98CD-92C9FD9FC940}|CIUnitTesting.csproj|solutionrelative:weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5516A970-3EA2-48B8-A1F1-13944A16C79A}|..\\WeatherForecast.API.Test\\WeatherForecast.API.Test.csproj|d:\\citest\\weatherforecast.api.test\\usings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C222574D-094B-488C-98CD-92C9FD9FC940}|CIUnitTesting.csproj|d:\\citest\\ciunittesting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C222574D-094B-488C-98CD-92C9FD9FC940}|CIUnitTesting.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,7 +31,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -60,20 +63,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "WeatherForecastClient.cs",
+              "DocumentMoniker": "D:\\CITest\\WeatherForecast.Communication\\WeatherForecastClient.cs",
+              "RelativeDocumentMoniker": "..\\WeatherForecast.Communication\\WeatherForecastClient.cs",
+              "ToolTip": "D:\\CITest\\WeatherForecast.Communication\\WeatherForecastClient.cs",
+              "RelativeToolTip": "..\\WeatherForecast.Communication\\WeatherForecastClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T02:31:34.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "D:\\CITest\\CIUnitTesting\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "WeatherForecast.cs",
               "ToolTip": "D:\\CITest\\CIUnitTesting\\WeatherForecast.cs",
               "RelativeToolTip": "WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T08:09:47.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Usings.cs",
               "DocumentMoniker": "D:\\CITest\\WeatherForecast.API.Test\\Usings.cs",
               "RelativeDocumentMoniker": "..\\WeatherForecast.API.Test\\Usings.cs",
@@ -81,36 +97,38 @@
               "RelativeToolTip": "..\\WeatherForecast.API.Test\\Usings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T07:54:19.794Z"
+              "WhenOpened": "2025-03-17T07:54:19.794Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "D:\\CITest\\WeatherForecast.API.Test\\UnitTest1.cs",
               "RelativeDocumentMoniker": "..\\WeatherForecast.API.Test\\UnitTest1.cs",
               "ToolTip": "D:\\CITest\\WeatherForecast.API.Test\\UnitTest1.cs",
               "RelativeToolTip": "..\\WeatherForecast.API.Test\\UnitTest1.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwC4AAABYAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAA9wBgAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T07:54:06.397Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "D:\\CITest\\CIUnitTesting\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
               "ToolTip": "D:\\CITest\\CIUnitTesting\\Controllers\\WeatherForecastController.cs",
               "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAkwBgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T07:32:11.44Z"
+              "WhenOpened": "2025-03-17T07:32:11.44Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\CITest\\CIUnitTesting\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -118,7 +136,8 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T07:32:09.412Z"
+              "WhenOpened": "2025-03-17T07:32:09.412Z",
+              "EditorCaption": ""
             }
           ]
         },

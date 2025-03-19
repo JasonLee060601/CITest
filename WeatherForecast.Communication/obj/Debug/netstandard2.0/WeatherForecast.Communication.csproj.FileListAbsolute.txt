@@ -1,0 +1,11 @@
+D:\CITest\WeatherForecast.Communication\bin\Debug\netstandard2.0\WeatherForecast.Communication.deps.json
+D:\CITest\WeatherForecast.Communication\bin\Debug\netstandard2.0\WeatherForecast.Communication.dll
+D:\CITest\WeatherForecast.Communication\bin\Debug\netstandard2.0\WeatherForecast.Communication.pdb
+D:\CITest\WeatherForecast.Communication\obj\Debug\netstandard2.0\WeatherForecast.Communication.csproj.AssemblyReference.cache
+D:\CITest\WeatherForecast.Communication\obj\Debug\netstandard2.0\WeatherForecast.Communication.GeneratedMSBuildEditorConfig.editorconfig
+D:\CITest\WeatherForecast.Communication\obj\Debug\netstandard2.0\WeatherForecast.Communication.AssemblyInfoInputs.cache
+D:\CITest\WeatherForecast.Communication\obj\Debug\netstandard2.0\WeatherForecast.Communication.AssemblyInfo.cs
+D:\CITest\WeatherForecast.Communication\obj\Debug\netstandard2.0\WeatherForecast.Communication.csproj.CoreCompileInputs.cache
+D:\CITest\WeatherForecast.Communication\obj\Debug\netstandard2.0\WeatherForecast.Communication.sourcelink.json
+D:\CITest\WeatherForecast.Communication\obj\Debug\netstandard2.0\WeatherForecast.Communication.dll
+D:\CITest\WeatherForecast.Communication\obj\Debug\netstandard2.0\WeatherForecast.Communication.pdb

@@ -30,3 +30,4 @@ D:\CITest\CIUnitTesting\obj\Debug\net6.0\refint\CIUnitTesting.dll
 D:\CITest\CIUnitTesting\obj\Debug\net6.0\CIUnitTesting.pdb
 D:\CITest\CIUnitTesting\obj\Debug\net6.0\CIUnitTesting.genruntimeconfig.cache
 D:\CITest\CIUnitTesting\obj\Debug\net6.0\ref\CIUnitTesting.dll
+D:\CITest\CIUnitTesting\obj\Debug\net6.0\CIUnitTesting.sourcelink.json

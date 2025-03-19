@@ -1,24 +1,31 @@
 using CIUnitTesting.Controllers;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Moq;
+using WeatherForecast.Communication;
 
 namespace WeatherForecast.API.Test
 {
     public class WeatherForecastControllerTests
     {
         private readonly WeatherForecastController _controller;
+        public WeatherForecastClient _weatherForecastClient;
+        public IConfiguration _configuration;
+        public HttpClient _httpClient = new HttpClient();
 
         public WeatherForecastControllerTests()
         {
             var mockLogger = new Mock<ILogger<WeatherForecastController>>();
             _controller = new WeatherForecastController(mockLogger.Object);
+            _configuration = new ConfigurationBuilder().AddInMemoryCollection().Build();
+            _weatherForecastClient = new WeatherForecastClient(_configuration);
         }
 
         [Fact]
-        public void Get_ReturnsFiveWeatherForecasts()
+        public async Task Get_ReturnsFiveWeatherForecasts()
         {
             // Act
-            var result = _controller.Get();
+            var result = await _weatherForecastClient.GetWeatherForecast(_httpClient);
 
             // Assert
             Assert.NotNull(result);

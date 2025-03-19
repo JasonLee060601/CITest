@@ -111,3 +111,8 @@ D:\CITest\WeatherForecast.API.Test\obj\Debug\net6.0\refint\WeatherForecast.API.T
 D:\CITest\WeatherForecast.API.Test\obj\Debug\net6.0\WeatherForecast.API.Test.pdb
 D:\CITest\WeatherForecast.API.Test\obj\Debug\net6.0\WeatherForecast.API.Test.genruntimeconfig.cache
 D:\CITest\WeatherForecast.API.Test\obj\Debug\net6.0\ref\WeatherForecast.API.Test.dll
+D:\CITest\WeatherForecast.API.Test\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\CITest\WeatherForecast.API.Test\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\CITest\WeatherForecast.API.Test\bin\Debug\net6.0\WeatherForecast.Communication.dll
+D:\CITest\WeatherForecast.API.Test\bin\Debug\net6.0\WeatherForecast.Communication.pdb
+D:\CITest\WeatherForecast.API.Test\obj\Debug\net6.0\WeatherForecast.API.Test.sourcelink.json

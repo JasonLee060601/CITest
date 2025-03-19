@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CIUnitTesting\CIUnitTesting.csproj" />
+    <ProjectReference Include="..\WeatherForecast.Communication\WeatherForecast.Communication.csproj" />
   </ItemGroup>
 
 </Project>
